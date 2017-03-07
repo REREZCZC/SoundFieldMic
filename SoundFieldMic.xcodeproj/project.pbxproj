@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C2803B11DF7B993004660AB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2803B01DF7B993004660AB /* CoreAudio.framework */; };
+		4C2803B31DF7B9A6004660AB /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2803B21DF7B9A6004660AB /* CoreAudioKit.framework */; };
+		4C2C46FE1DF7EE3C003A96B6 /* HAMLogOutputWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C46FD1DF7EE3C003A96B6 /* HAMLogOutputWindow.m */; };
+		4C6BA7BE1DF01DB700478E17 /* UIView+YMViewGap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BA7BD1DF01DB700478E17 /* UIView+YMViewGap.m */; };
+		4C6BA7C11DF023FC00478E17 /* UIColor+YMViewColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BA7C01DF023FC00478E17 /* UIColor+YMViewColor.m */; };
+		4C6BA7C41DF024A700478E17 /* UIFont+YMTextSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BA7C31DF024A700478E17 /* UIFont+YMTextSize.m */; };
+		4C6C44FB1E505C7A007F5650 /* YINMANAUDIOSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6C44FA1E505C7A007F5650 /* YINMANAUDIOSDK.framework */; };
+		4C8DE9301E4576F700D1C7CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8DE92F1E4576F700D1C7CA /* ViewController.m */; };
+		4C8DE9331E457BFB00D1C7CA /* Southern Rock Drums.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C8DE9321E457BFB00D1C7CA /* Southern Rock Drums.m4a */; };
+		4C8DE9361E45805700D1C7CA /* TPOscilloscopeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8DE9351E45805700D1C7CA /* TPOscilloscopeLayer.m */; };
+		4C8DE9381E45813E00D1C7CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8DE9371E45813E00D1C7CA /* CoreGraphics.framework */; };
+		4C8DE93A1E45817800D1C7CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8DE9391E45817800D1C7CA /* QuartzCore.framework */; };
+		4C8DE93C1E4581B000D1C7CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8DE93B1E4581B000D1C7CA /* Foundation.framework */; };
+		4C8DE93E1E4581BE00D1C7CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8DE93D1E4581BE00D1C7CA /* UIKit.framework */; };
+		4C8DE9401E4581CC00D1C7CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8DE93F1E4581CC00D1C7CA /* AVFoundation.framework */; };
+		4C8DE9431E45C17500D1C7CA /* SoundFieldMicChannelSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8DE9421E45C17500D1C7CA /* SoundFieldMicChannelSelectionView.m */; };
+		4C9046281DED7B98004DC621 /* SoundFieldMicRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C90461B1DED7B98004DC621 /* SoundFieldMicRecorder.m */; };
+		4C9046291DED7B98004DC621 /* SoundFieldMicControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C90461F1DED7B98004DC621 /* SoundFieldMicControlView.m */; };
+		4C90462A1DED7B98004DC621 /* SoundFieldMicGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9046221DED7B98004DC621 /* SoundFieldMicGraphView.m */; };
+		4C90462B1DED7B98004DC621 /* SoundFieldMicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9046251DED7B98004DC621 /* SoundFieldMicView.m */; };
+		4C90462C1DED7B98004DC621 /* SoundFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9046271DED7B98004DC621 /* SoundFieldViewController.m */; };
+		4C9046301DED94BF004DC621 /* FolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C90462F1DED94BF004DC621 /* FolderViewController.m */; };
+		4C9046331DED9C6B004DC621 /* FoldertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9046321DED9C6B004DC621 /* FoldertView.m */; };
+		4CD7C9401DEEAFCF00395372 /* FolderViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD7C93F1DEEAFCF00395372 /* FolderViewDataSource.m */; };
+		4CD7C9431DEEB13B00395372 /* FolderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD7C9421DEEB13B00395372 /* FolderViewCell.m */; };
+		88455C56BD281D605CC1BC66 /* libPods-SoundFieldMic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C58800A5AB8E365B3EA7F1 /* libPods-SoundFieldMic.a */; };
+		AB66A8231DEBC94600BF9AE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB66A8221DEBC94600BF9AE3 /* main.m */; };
+		AB66A8261DEBC94600BF9AE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB66A8251DEBC94600BF9AE3 /* AppDelegate.m */; };
+		AB66A8311DEBC94600BF9AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB66A82F1DEBC94600BF9AE3 /* LaunchScreen.storyboard */; };
+		AB66A83C1DEBC94600BF9AE3 /* SoundFieldMicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB66A83B1DEBC94600BF9AE3 /* SoundFieldMicTests.m */; };
+		AB66A8471DEBC94600BF9AE3 /* SoundFieldMicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB66A8461DEBC94600BF9AE3 /* SoundFieldMicUITests.m */; };
+		ABC2EC031DED1E1700BFCBC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC2EC021DED1E1700BFCBC2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB66A8381DEBC94600BF9AE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB66A8161DEBC94600BF9AE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB66A81D1DEBC94600BF9AE3;
+			remoteInfo = SoundFieldMic;
+		};
+		AB66A8431DEBC94600BF9AE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB66A8161DEBC94600BF9AE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB66A81D1DEBC94600BF9AE3;
+			remoteInfo = SoundFieldMic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C2803B01DF7B993004660AB /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		4C2803B21DF7B9A6004660AB /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		4C2C46FC1DF7EE3C003A96B6 /* HAMLogOutputWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAMLogOutputWindow.h; sourceTree = "<group>"; };
+		4C2C46FD1DF7EE3C003A96B6 /* HAMLogOutputWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAMLogOutputWindow.m; sourceTree = "<group>"; };
+		4C6BA7BC1DF01DB700478E17 /* UIView+YMViewGap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YMViewGap.h"; sourceTree = "<group>"; };
+		4C6BA7BD1DF01DB700478E17 /* UIView+YMViewGap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YMViewGap.m"; sourceTree = "<group>"; };
+		4C6BA7BF1DF023FC00478E17 /* UIColor+YMViewColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YMViewColor.h"; sourceTree = "<group>"; };
+		4C6BA7C01DF023FC00478E17 /* UIColor+YMViewColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YMViewColor.m"; sourceTree = "<group>"; };
+		4C6BA7C21DF024A700478E17 /* UIFont+YMTextSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+YMTextSize.h"; sourceTree = "<group>"; };
+		4C6BA7C31DF024A700478E17 /* UIFont+YMTextSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+YMTextSize.m"; sourceTree = "<group>"; };
+		4C6C44FA1E505C7A007F5650 /* YINMANAUDIOSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YINMANAUDIOSDK.framework; path = SoundFieldMic/YINMANAUDIOSDK.framework; sourceTree = "<group>"; };
+		4C8DE92E1E4576F700D1C7CA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4C8DE92F1E4576F700D1C7CA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4C8DE9321E457BFB00D1C7CA /* Southern Rock Drums.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Southern Rock Drums.m4a"; sourceTree = "<group>"; };
+		4C8DE9341E45805700D1C7CA /* TPOscilloscopeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPOscilloscopeLayer.h; sourceTree = "<group>"; };
+		4C8DE9351E45805700D1C7CA /* TPOscilloscopeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPOscilloscopeLayer.m; sourceTree = "<group>"; };
+		4C8DE9371E45813E00D1C7CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4C8DE9391E45817800D1C7CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4C8DE93B1E4581B000D1C7CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C8DE93D1E4581BE00D1C7CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4C8DE93F1E4581CC00D1C7CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4C8DE9411E45C17500D1C7CA /* SoundFieldMicChannelSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFieldMicChannelSelectionView.h; sourceTree = "<group>"; };
+		4C8DE9421E45C17500D1C7CA /* SoundFieldMicChannelSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFieldMicChannelSelectionView.m; sourceTree = "<group>"; };
+		4C90461A1DED7B98004DC621 /* SoundFieldMicRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFieldMicRecorder.h; sourceTree = "<group>"; };
+		4C90461B1DED7B98004DC621 /* SoundFieldMicRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFieldMicRecorder.m; sourceTree = "<group>"; };
+		4C90461E1DED7B98004DC621 /* SoundFieldMicControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFieldMicControlView.h; sourceTree = "<group>"; };
+		4C90461F1DED7B98004DC621 /* SoundFieldMicControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFieldMicControlView.m; sourceTree = "<group>"; };
+		4C9046211DED7B98004DC621 /* SoundFieldMicGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFieldMicGraphView.h; sourceTree = "<group>"; };
+		4C9046221DED7B98004DC621 /* SoundFieldMicGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFieldMicGraphView.m; sourceTree = "<group>"; };
+		4C9046241DED7B98004DC621 /* SoundFieldMicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFieldMicView.h; sourceTree = "<group>"; };
+		4C9046251DED7B98004DC621 /* SoundFieldMicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFieldMicView.m; sourceTree = "<group>"; };
+		4C9046261DED7B98004DC621 /* SoundFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFieldViewController.h; sourceTree = "<group>"; };
+		4C9046271DED7B98004DC621 /* SoundFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFieldViewController.m; sourceTree = "<group>"; };
+		4C90462E1DED94BF004DC621 /* FolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderViewController.h; sourceTree = "<group>"; };
+		4C90462F1DED94BF004DC621 /* FolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderViewController.m; sourceTree = "<group>"; };
+		4C9046311DED9C6B004DC621 /* FoldertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldertView.h; sourceTree = "<group>"; };
+		4C9046321DED9C6B004DC621 /* FoldertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldertView.m; sourceTree = "<group>"; };
+		4CD7C93E1DEEAFCF00395372 /* FolderViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderViewDataSource.h; sourceTree = "<group>"; };
+		4CD7C93F1DEEAFCF00395372 /* FolderViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderViewDataSource.m; sourceTree = "<group>"; };
+		4CD7C9411DEEB13B00395372 /* FolderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderViewCell.h; sourceTree = "<group>"; };
+		4CD7C9421DEEB13B00395372 /* FolderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderViewCell.m; sourceTree = "<group>"; };
+		80C58800A5AB8E365B3EA7F1 /* libPods-SoundFieldMic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoundFieldMic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB66A81E1DEBC94600BF9AE3 /* SoundFieldMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundFieldMic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB66A8221DEBC94600BF9AE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB66A8241DEBC94600BF9AE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB66A8251DEBC94600BF9AE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB66A8301DEBC94600BF9AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB66A8321DEBC94600BF9AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB66A8371DEBC94600BF9AE3 /* SoundFieldMicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundFieldMicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB66A83B1DEBC94600BF9AE3 /* SoundFieldMicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundFieldMicTests.m; sourceTree = "<group>"; };
+		AB66A83D1DEBC94600BF9AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB66A8421DEBC94600BF9AE3 /* SoundFieldMicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundFieldMicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB66A8461DEBC94600BF9AE3 /* SoundFieldMicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundFieldMicUITests.m; sourceTree = "<group>"; };
+		AB66A8481DEBC94600BF9AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC2EC021DED1E1700BFCBC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB1984A93CDA2BE13063FC37 /* Pods-SoundFieldMic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundFieldMic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundFieldMic/Pods-SoundFieldMic.debug.xcconfig"; sourceTree = "<group>"; };
+		F2523C7390890CF50AAE2465 /* Pods-SoundFieldMic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundFieldMic.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundFieldMic/Pods-SoundFieldMic.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB66A81B1DEBC94600BF9AE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6C44FB1E505C7A007F5650 /* YINMANAUDIOSDK.framework in Frameworks */,
+				4C8DE9401E4581CC00D1C7CA /* AVFoundation.framework in Frameworks */,
+				4C8DE93E1E4581BE00D1C7CA /* UIKit.framework in Frameworks */,
+				4C8DE93C1E4581B000D1C7CA /* Foundation.framework in Frameworks */,
+				4C8DE93A1E45817800D1C7CA /* QuartzCore.framework in Frameworks */,
+				4C8DE9381E45813E00D1C7CA /* CoreGraphics.framework in Frameworks */,
+				4C2803B31DF7B9A6004660AB /* CoreAudioKit.framework in Frameworks */,
+				4C2803B11DF7B993004660AB /* CoreAudio.framework in Frameworks */,
+				88455C56BD281D605CC1BC66 /* libPods-SoundFieldMic.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB66A8341DEBC94600BF9AE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB66A83F1DEBC94600BF9AE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B80266E32CB65102508FDDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C6C44FA1E505C7A007F5650 /* YINMANAUDIOSDK.framework */,
+				4C8DE93F1E4581CC00D1C7CA /* AVFoundation.framework */,
+				4C8DE93D1E4581BE00D1C7CA /* UIKit.framework */,
+				4C8DE93B1E4581B000D1C7CA /* Foundation.framework */,
+				4C8DE9391E45817800D1C7CA /* QuartzCore.framework */,
+				4C8DE9371E45813E00D1C7CA /* CoreGraphics.framework */,
+				4C2803B21DF7B9A6004660AB /* CoreAudioKit.framework */,
+				4C2803B01DF7B993004660AB /* CoreAudio.framework */,
+				80C58800A5AB8E365B3EA7F1 /* libPods-SoundFieldMic.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C2C46FB1DF7EE3C003A96B6 /* LogOutputWindow */ = {
+			isa = PBXGroup;
+			children = (
+				4C2C46FC1DF7EE3C003A96B6 /* HAMLogOutputWindow.h */,
+				4C2C46FD1DF7EE3C003A96B6 /* HAMLogOutputWindow.m */,
+			);
+			path = LogOutputWindow;
+			sourceTree = "<group>";
+		};
+		4C6BA7BB1DF01D3100478E17 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4C6BA7BC1DF01DB700478E17 /* UIView+YMViewGap.h */,
+				4C6BA7BD1DF01DB700478E17 /* UIView+YMViewGap.m */,
+				4C6BA7BF1DF023FC00478E17 /* UIColor+YMViewColor.h */,
+				4C6BA7C01DF023FC00478E17 /* UIColor+YMViewColor.m */,
+				4C6BA7C21DF024A700478E17 /* UIFont+YMTextSize.h */,
+				4C6BA7C31DF024A700478E17 /* UIFont+YMTextSize.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4C8DE9311E457BFB00D1C7CA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4C8DE9321E457BFB00D1C7CA /* Southern Rock Drums.m4a */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4C9046191DED7B98004DC621 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				4C90461A1DED7B98004DC621 /* SoundFieldMicRecorder.h */,
+				4C90461B1DED7B98004DC621 /* SoundFieldMicRecorder.m */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		4C90461C1DED7B98004DC621 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4C6BA7BB1DF01D3100478E17 /* Tools */,
+				4C9046231DED7B98004DC621 /* Main */,
+				4C90462D1DED94AB004DC621 /* Folder */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4C90461D1DED7B98004DC621 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				4C90461E1DED7B98004DC621 /* SoundFieldMicControlView.h */,
+				4C90461F1DED7B98004DC621 /* SoundFieldMicControlView.m */,
+				4C8DE9411E45C17500D1C7CA /* SoundFieldMicChannelSelectionView.h */,
+				4C8DE9421E45C17500D1C7CA /* SoundFieldMicChannelSelectionView.m */,
+			);
+			name = Control;
+			path = ../Control;
+			sourceTree = "<group>";
+		};
+		4C9046201DED7B98004DC621 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				4C8DE9341E45805700D1C7CA /* TPOscilloscopeLayer.h */,
+				4C8DE9351E45805700D1C7CA /* TPOscilloscopeLayer.m */,
+				4C9046211DED7B98004DC621 /* SoundFieldMicGraphView.h */,
+				4C9046221DED7B98004DC621 /* SoundFieldMicGraphView.m */,
+			);
+			name = Graph;
+			path = ../Graph;
+			sourceTree = "<group>";
+		};
+		4C9046231DED7B98004DC621 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4C9046201DED7B98004DC621 /* Graph */,
+				4C90461D1DED7B98004DC621 /* Control */,
+				4C9046241DED7B98004DC621 /* SoundFieldMicView.h */,
+				4C9046251DED7B98004DC621 /* SoundFieldMicView.m */,
+				4C9046261DED7B98004DC621 /* SoundFieldViewController.h */,
+				4C9046271DED7B98004DC621 /* SoundFieldViewController.m */,
+				4C8DE92E1E4576F700D1C7CA /* ViewController.h */,
+				4C8DE92F1E4576F700D1C7CA /* ViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4C90462D1DED94AB004DC621 /* Folder */ = {
+			isa = PBXGroup;
+			children = (
+				4CD7C93D1DEEAFA700395372 /* DataSource */,
+				4C90462E1DED94BF004DC621 /* FolderViewController.h */,
+				4C90462F1DED94BF004DC621 /* FolderViewController.m */,
+				4C9046311DED9C6B004DC621 /* FoldertView.h */,
+				4C9046321DED9C6B004DC621 /* FoldertView.m */,
+			);
+			path = Folder;
+			sourceTree = "<group>";
+		};
+		4CD7C93D1DEEAFA700395372 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4CD7C93E1DEEAFCF00395372 /* FolderViewDataSource.h */,
+				4CD7C93F1DEEAFCF00395372 /* FolderViewDataSource.m */,
+				4CD7C9411DEEB13B00395372 /* FolderViewCell.h */,
+				4CD7C9421DEEB13B00395372 /* FolderViewCell.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		AB66A8151DEBC94500BF9AE3 = {
+			isa = PBXGroup;
+			children = (
+				AB66A8201DEBC94600BF9AE3 /* SoundFieldMic */,
+				AB66A83A1DEBC94600BF9AE3 /* SoundFieldMicTests */,
+				AB66A8451DEBC94600BF9AE3 /* SoundFieldMicUITests */,
+				AB66A81F1DEBC94600BF9AE3 /* Products */,
+				B33AEE638221E35221E234AA /* Pods */,
+				1B80266E32CB65102508FDDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AB66A81F1DEBC94600BF9AE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB66A81E1DEBC94600BF9AE3 /* SoundFieldMic.app */,
+				AB66A8371DEBC94600BF9AE3 /* SoundFieldMicTests.xctest */,
+				AB66A8421DEBC94600BF9AE3 /* SoundFieldMicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB66A8201DEBC94600BF9AE3 /* SoundFieldMic */ = {
+			isa = PBXGroup;
+			children = (
+				4C8DE9311E457BFB00D1C7CA /* Resource */,
+				4C2C46FB1DF7EE3C003A96B6 /* LogOutputWindow */,
+				4C9046191DED7B98004DC621 /* Recorder */,
+				4C90461C1DED7B98004DC621 /* UI */,
+				ABC2EC021DED1E1700BFCBC2 /* Assets.xcassets */,
+				AB66A8241DEBC94600BF9AE3 /* AppDelegate.h */,
+				AB66A8251DEBC94600BF9AE3 /* AppDelegate.m */,
+				AB66A82F1DEBC94600BF9AE3 /* LaunchScreen.storyboard */,
+				AB66A8321DEBC94600BF9AE3 /* Info.plist */,
+				AB66A8211DEBC94600BF9AE3 /* Supporting Files */,
+			);
+			path = SoundFieldMic;
+			sourceTree = "<group>";
+		};
+		AB66A8211DEBC94600BF9AE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB66A8221DEBC94600BF9AE3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB66A83A1DEBC94600BF9AE3 /* SoundFieldMicTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB66A83B1DEBC94600BF9AE3 /* SoundFieldMicTests.m */,
+				AB66A83D1DEBC94600BF9AE3 /* Info.plist */,
+			);
+			path = SoundFieldMicTests;
+			sourceTree = "<group>";
+		};
+		AB66A8451DEBC94600BF9AE3 /* SoundFieldMicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB66A8461DEBC94600BF9AE3 /* SoundFieldMicUITests.m */,
+				AB66A8481DEBC94600BF9AE3 /* Info.plist */,
+			);
+			path = SoundFieldMicUITests;
+			sourceTree = "<group>";
+		};
+		B33AEE638221E35221E234AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB1984A93CDA2BE13063FC37 /* Pods-SoundFieldMic.debug.xcconfig */,
+				F2523C7390890CF50AAE2465 /* Pods-SoundFieldMic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB66A81D1DEBC94600BF9AE3 /* SoundFieldMic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB66A84B1DEBC94600BF9AE3 /* Build configuration list for PBXNativeTarget "SoundFieldMic" */;
+			buildPhases = (
+				875B7AB50A4AFF25671DE549 /* [CP] Check Pods Manifest.lock */,
+				AB66A81A1DEBC94600BF9AE3 /* Sources */,
+				AB66A81B1DEBC94600BF9AE3 /* Frameworks */,
+				AB66A81C1DEBC94600BF9AE3 /* Resources */,
+				460520F3A5E5DCCB89DDFC98 /* [CP] Embed Pods Frameworks */,
+				1843D22E4417AE901D23F7C5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundFieldMic;
+			productName = SoundFieldMic;
+			productReference = AB66A81E1DEBC94600BF9AE3 /* SoundFieldMic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB66A8361DEBC94600BF9AE3 /* SoundFieldMicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB66A84E1DEBC94600BF9AE3 /* Build configuration list for PBXNativeTarget "SoundFieldMicTests" */;
+			buildPhases = (
+				AB66A8331DEBC94600BF9AE3 /* Sources */,
+				AB66A8341DEBC94600BF9AE3 /* Frameworks */,
+				AB66A8351DEBC94600BF9AE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB66A8391DEBC94600BF9AE3 /* PBXTargetDependency */,
+			);
+			name = SoundFieldMicTests;
+			productName = SoundFieldMicTests;
+			productReference = AB66A8371DEBC94600BF9AE3 /* SoundFieldMicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB66A8411DEBC94600BF9AE3 /* SoundFieldMicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB66A8511DEBC94600BF9AE3 /* Build configuration list for PBXNativeTarget "SoundFieldMicUITests" */;
+			buildPhases = (
+				AB66A83E1DEBC94600BF9AE3 /* Sources */,
+				AB66A83F1DEBC94600BF9AE3 /* Frameworks */,
+				AB66A8401DEBC94600BF9AE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB66A8441DEBC94600BF9AE3 /* PBXTargetDependency */,
+			);
+			name = SoundFieldMicUITests;
+			productName = SoundFieldMicUITests;
+			productReference = AB66A8421DEBC94600BF9AE3 /* SoundFieldMicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB66A8161DEBC94600BF9AE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Yinkman;
+				TargetAttributes = {
+					AB66A81D1DEBC94600BF9AE3 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = GQ6K79WX2K;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					AB66A8361DEBC94600BF9AE3 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = GQ6K79WX2K;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB66A81D1DEBC94600BF9AE3;
+					};
+					AB66A8411DEBC94600BF9AE3 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = GQ6K79WX2K;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB66A81D1DEBC94600BF9AE3;
+					};
+				};
+			};
+			buildConfigurationList = AB66A8191DEBC94600BF9AE3 /* Build configuration list for PBXProject "SoundFieldMic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB66A8151DEBC94500BF9AE3;
+			productRefGroup = AB66A81F1DEBC94600BF9AE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB66A81D1DEBC94600BF9AE3 /* SoundFieldMic */,
+				AB66A8361DEBC94600BF9AE3 /* SoundFieldMicTests */,
+				AB66A8411DEBC94600BF9AE3 /* SoundFieldMicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB66A81C1DEBC94600BF9AE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8DE9331E457BFB00D1C7CA /* Southern Rock Drums.m4a in Resources */,
+				ABC2EC031DED1E1700BFCBC2 /* Assets.xcassets in Resources */,
+				AB66A8311DEBC94600BF9AE3 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB66A8351DEBC94600BF9AE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB66A8401DEBC94600BF9AE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1843D22E4417AE901D23F7C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoundFieldMic/Pods-SoundFieldMic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		460520F3A5E5DCCB89DDFC98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoundFieldMic/Pods-SoundFieldMic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		875B7AB50A4AFF25671DE549 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB66A81A1DEBC94600BF9AE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6BA7C11DF023FC00478E17 /* UIColor+YMViewColor.m in Sources */,
+				4CD7C9431DEEB13B00395372 /* FolderViewCell.m in Sources */,
+				AB66A8261DEBC94600BF9AE3 /* AppDelegate.m in Sources */,
+				4C6BA7BE1DF01DB700478E17 /* UIView+YMViewGap.m in Sources */,
+				4C2C46FE1DF7EE3C003A96B6 /* HAMLogOutputWindow.m in Sources */,
+				4CD7C9401DEEAFCF00395372 /* FolderViewDataSource.m in Sources */,
+				4C8DE9361E45805700D1C7CA /* TPOscilloscopeLayer.m in Sources */,
+				4C9046331DED9C6B004DC621 /* FoldertView.m in Sources */,
+				4C90462B1DED7B98004DC621 /* SoundFieldMicView.m in Sources */,
+				4C90462A1DED7B98004DC621 /* SoundFieldMicGraphView.m in Sources */,
+				4C8DE9431E45C17500D1C7CA /* SoundFieldMicChannelSelectionView.m in Sources */,
+				4C90462C1DED7B98004DC621 /* SoundFieldViewController.m in Sources */,
+				4C8DE9301E4576F700D1C7CA /* ViewController.m in Sources */,
+				4C9046301DED94BF004DC621 /* FolderViewController.m in Sources */,
+				4C6BA7C41DF024A700478E17 /* UIFont+YMTextSize.m in Sources */,
+				4C9046281DED7B98004DC621 /* SoundFieldMicRecorder.m in Sources */,
+				AB66A8231DEBC94600BF9AE3 /* main.m in Sources */,
+				4C9046291DED7B98004DC621 /* SoundFieldMicControlView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB66A8331DEBC94600BF9AE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB66A83C1DEBC94600BF9AE3 /* SoundFieldMicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB66A83E1DEBC94600BF9AE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB66A8471DEBC94600BF9AE3 /* SoundFieldMicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB66A8391DEBC94600BF9AE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB66A81D1DEBC94600BF9AE3 /* SoundFieldMic */;
+			targetProxy = AB66A8381DEBC94600BF9AE3 /* PBXContainerItemProxy */;
+		};
+		AB66A8441DEBC94600BF9AE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB66A81D1DEBC94600BF9AE3 /* SoundFieldMic */;
+			targetProxy = AB66A8431DEBC94600BF9AE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB66A82F1DEBC94600BF9AE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB66A8301DEBC94600BF9AE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB66A8491DEBC94600BF9AE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB66A84A1DEBC94600BF9AE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB66A84C1DEBC94600BF9AE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB1984A93CDA2BE13063FC37 /* Pods-SoundFieldMic.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = GQ6K79WX2K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SoundFieldMic",
+				);
+				INFOPLIST_FILE = SoundFieldMic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yinkman.SoundFieldMic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SoundFieldMic/UI/Main/SoundFieldMic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		AB66A84D1DEBC94600BF9AE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2523C7390890CF50AAE2465 /* Pods-SoundFieldMic.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = GQ6K79WX2K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SoundFieldMic",
+				);
+				INFOPLIST_FILE = SoundFieldMic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yinkman.SoundFieldMic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SoundFieldMic/UI/Main/SoundFieldMic-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		AB66A84F1DEBC94600BF9AE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GQ6K79WX2K;
+				INFOPLIST_FILE = SoundFieldMicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yinkman.SoundFieldMicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundFieldMic.app/SoundFieldMic";
+			};
+			name = Debug;
+		};
+		AB66A8501DEBC94600BF9AE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GQ6K79WX2K;
+				INFOPLIST_FILE = SoundFieldMicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yinkman.SoundFieldMicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundFieldMic.app/SoundFieldMic";
+			};
+			name = Release;
+		};
+		AB66A8521DEBC94600BF9AE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GQ6K79WX2K;
+				INFOPLIST_FILE = SoundFieldMicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yinkman.SoundFieldMicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SoundFieldMic;
+			};
+			name = Debug;
+		};
+		AB66A8531DEBC94600BF9AE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GQ6K79WX2K;
+				INFOPLIST_FILE = SoundFieldMicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Yinkman.SoundFieldMicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SoundFieldMic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB66A8191DEBC94600BF9AE3 /* Build configuration list for PBXProject "SoundFieldMic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB66A8491DEBC94600BF9AE3 /* Debug */,
+				AB66A84A1DEBC94600BF9AE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB66A84B1DEBC94600BF9AE3 /* Build configuration list for PBXNativeTarget "SoundFieldMic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB66A84C1DEBC94600BF9AE3 /* Debug */,
+				AB66A84D1DEBC94600BF9AE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB66A84E1DEBC94600BF9AE3 /* Build configuration list for PBXNativeTarget "SoundFieldMicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB66A84F1DEBC94600BF9AE3 /* Debug */,
+				AB66A8501DEBC94600BF9AE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB66A8511DEBC94600BF9AE3 /* Build configuration list for PBXNativeTarget "SoundFieldMicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB66A8521DEBC94600BF9AE3 /* Debug */,
+				AB66A8531DEBC94600BF9AE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB66A8161DEBC94600BF9AE3 /* Project object */;
+}

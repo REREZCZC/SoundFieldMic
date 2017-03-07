@@ -1,0 +1,15 @@
+PODS:
+  - Masonry (1.0.2)
+  - TheAmazingAudioEngine (1.5.8)
+
+DEPENDENCIES:
+  - Masonry (~> 1.0.2)
+  - TheAmazingAudioEngine
+
+SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  TheAmazingAudioEngine: 24e382d9468283bb1b3f08df29b514aa522ef4fd
+
+PODFILE CHECKSUM: 7327c8b07099ce6ad5babc2b81dc7dd6e2c26854
+
+COCOAPODS: 1.1.1
