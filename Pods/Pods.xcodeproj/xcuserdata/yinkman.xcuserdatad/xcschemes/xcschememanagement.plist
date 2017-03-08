@@ -8,11 +8,20 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Pods-SoundFieldMic.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>TheAmazingAudioEngine.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -22,7 +31,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>95E40C8D7109130C8BE6C07D59DFE24B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C4CBA7F90A0E1416F11D85B001C256F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF4E83146112D271590D704084326ECA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
